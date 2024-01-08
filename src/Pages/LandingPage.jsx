@@ -77,8 +77,6 @@ function LandingPage() {
           <Col lg={5}>
             <h3 className='text-warning mb-5'>simple fast and powerful</h3>
             <h6><span className='fw-bolder fs-5'>Play Everything</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis eaque perferendis iste aliquam dolores illo. Voluptatem at tempore earum minima est reprehenderit culpa, laborum voluptatibus officia molestiae hic libero?</h6>
-            <h6><span className='fw-bolder fs-5'>Play Everything</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis eaque perferendis iste aliquam dolores illo. Voluptatem at tempore earum minima est reprehenderit culpa, laborum voluptatibus officia molestiae hic libero?</h6>
-            <h6><span className='fw-bolder fs-5'>Play Everything</span> : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis eaque perferendis iste aliquam dolores illo. Voluptatem at tempore earum minima est reprehenderit culpa, laborum voluptatibus officia molestiae hic libero?</h6>
             
           </Col>
           <Col></Col>

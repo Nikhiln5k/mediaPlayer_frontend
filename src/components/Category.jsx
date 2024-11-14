@@ -108,9 +108,9 @@ function Category() {
         <button
           onClick={handleShow}
           style={{ boxShadow: "0 15px 30px rgba(255, 166, 0, 0.250)" }}
-          className="btn btn-warning"
+          className="btn btn-warning d-flex justify-content-center align-items-center gap-2"
         >
-          Add Category
+          <span className="d-none d-md-inline">Add</span> Category <i className="fa-solid fa-plus d-inline d-md-none"></i>
         </button>
       </div>
 

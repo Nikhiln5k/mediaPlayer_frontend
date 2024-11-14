@@ -48,9 +48,9 @@ function VideoCard({displayVideo,setDeleteVideoStatus}) {
 
   return (
     <>
-        <Card style={{ width: '100%',cursor:"pointer",boxShadow:"0 15px 80px rgba(33, 44, 535, 0.120)" }} draggable onDragStart={(e)=>dragStarted(e,displayVideo?.id)}>
-            <Card.Img onClick={handleShow} height={200} style={{objectFit:"cover"}} variant="top" src={displayVideo.url} />
-            <Card.Body>
+        <Card className='w-100' style={{cursor:"pointer",boxShadow:"0 15px 80px rgba(33, 44, 535, 0.120)" }} draggable onDragStart={(e)=>dragStarted(e,displayVideo?.id)}>
+            <Card.Img onClick={handleShow} height={150} style={{objectFit:"cover"}} variant="top" src={displayVideo.url} />
+            <Card.Body className='d-none d-md-inline'>
                 <Card.Title className='d-flex justify-content-between'>
                     <h6>{displayVideo.caption}</h6>
                     <button onClick={()=>removeVideo(displayVideo?.id)} className='btn btn-danger'><i class="fa-solid fa-trash"></i></button>

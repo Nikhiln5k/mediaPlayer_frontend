@@ -65,7 +65,7 @@ function Add({setUploadVideoStatus}) {
   return (
     <>
       <div className="d-flex align-items-center">
-        <h5>Upload New Video</h5>
+        <h5 className=" fs-md-4">Upload <span className="d-none d-md-inline">New Video</span></h5>
         <button onClick={handleShow} className="btn">
           <i class="fa-solid fa-cloud-arrow-up fs-5"></i>
         </button>

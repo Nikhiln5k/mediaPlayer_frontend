@@ -5,18 +5,18 @@ function Footer() {
   return (
 
     <>
-      <div className='d-flex align-items-center justify-content-center flex-column mt-5' style={{width:"100%", height:"300px",zIndex:"1"}}>
+      <div className='w-100 p-3 d-flex align-items-center justify-content-center flex-column mt-5' style={{width:"100%", height:"300px",zIndex:"1"}}>
         {/* blur background */}
       
        <div className='d-flex justify-content-center' style={{width:"600px",height:"200px",position:"absolute",backgroundColor:"rgba(33, 44, 535, 0.300)",filter:"blur(200px)",zIndex:"-1"}}></div>
       
         {/* footer */}
 
-        <div className='footer d-flex align-items-center justify-content-evenly w-100'>
-          <div className="website" style={{width: "400px"}}>
+        <div className='footer p-3 mt-5 d-flex flex-wrap align-items-center justify-content-evenly w-100'>
+          <div className="website mt-5" style={{width: "400px"}}>
   
-            <h4><i class="fa-solid fa-video me-3 text-warning"></i>Media Player</h4>
-            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus aliquam quis ad alias consequatur nobis. Quo quis tempora perferendis impedit labore. Facere culpa fuga, excepturi incidunt sint corrupti voluptatum.</h6>
+            <h4><i class="fa-solid fa-video me-3 text-warning mt-5"></i>Media Player</h4>
+            <h6>The MediaPlayer App is a versatile and user-friendly platform that allows users to stream, upload, and organize their favorite media content seamlessly. With features like personalized playlists, watch history, media categorization, and user profiles, the app offers a tailored experience for each user. Built with a responsive design, it provides a smooth playback experience across devices.</h6>
           </div>
   
           <div className="links d-flex flex-column">
@@ -34,7 +34,7 @@ function Footer() {
             <Link to={'https://react-bootstrap.netlify.app/'} style={{textDecoration: "none", color: "white"}}>React Bootstrap</Link>
             <Link to={'https://bootswatch.com/'} style={{textDecoration: "none", color: "white"}}>Bootswatch</Link>
           </div>
-          <div className="contact">
+          <div className="contact mt-4">
             <h4>Contact Us</h4>
             <div className='d-flex'>
               <input type="text" className='form-control' placeholder='Enter your EmailID' />
@@ -49,7 +49,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <p className='mt-5'>Copyrigt © 2023 Media player. Built with React.</p>
+        <p className='mt-5 p-3 text-center'>Copyrigt © 2023 Media player. Built with React.</p>
       </div>
       
     </>

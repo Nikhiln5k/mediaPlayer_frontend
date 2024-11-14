@@ -23,45 +23,47 @@ function WatchHistory() {
 
   return (
     <>
-      <div className="container mt-5 d-flex justify-content-between">
-        <h3>Watch History</h3>
+      <div className="container mt-5 d-flex justify-content-between p-4">
+        <h3 className="fs-5">Watch History</h3>
         <Link
           to={"/home"}
-          className="d-flex align-items-center"
+          className="d-flex align-items-center fs-6"
           style={{ textDecoration: "none", color: "white", fontSize: "18px" }}
         >
           <i class="fa-solid fa-arrow-left me-3 text-warning"></i> Back To Home
         </Link>
       </div>
-      <table className="table mt-5 mb-5 container rounded">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Caption</th>
-            <th>URL</th>
-            <th>Time Zone</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {history?.length > 0 ? (
-            history.map((item) => (
-              <tr>
-                <td>{item.id}</td>
-                <td>{item.caption}</td>
-                <td>
-                  <a href={item.embedLink}>{item.embedLink}</a>
-                </td>
-                <td>{item.timeStamp}</td>
-                <td><button onClick={()=>handleDelete(item?.id)} className='btn btn-danger'><i class="fa-solid fa-trash"></i></button></td>
-              </tr>
-            ))
-          ) : (
-            <p>Nothing to display</p>
-          )}
-        </tbody>
-      </table>
+      <div className="p-4">
+        <table className="mt-5 container rounded" style={{marginBottom:"5rem"}}>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Caption</th>
+              <th className="d-none d-md-inline">URL</th>
+              <th className="d-none d-md-inline">Time Zone</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            {history?.length > 0 ? (
+              history.map((item) => (
+                <tr>
+                  <td>{item.id}</td>
+                  <td>{item.caption}</td>
+                  <td className="d-none d-md-inline">
+                    <a href={item.embedLink}>{item.embedLink}</a>
+                  </td>
+                  <td className="d-none d-md-inline">{item.timeStamp}</td>
+                  <td><button onClick={()=>handleDelete(item?.id)} className='btn text-danger'><i class="fa-solid fa-trash-can"></i></button></td>
+                </tr>
+              ))
+            ) : (
+              <p>Nothing to display</p>
+            )}
+          </tbody>
+        </table>
+      </div>
     </>
   );
 }

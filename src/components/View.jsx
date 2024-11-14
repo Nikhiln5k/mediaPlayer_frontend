@@ -28,7 +28,7 @@ function View({uploadVideoStatus}) {
   return (
     <>
       <div className="ms-5 p-3" style={{height:"50rem", overflowY:"scroll",overflowX:"hidden",borderRadius:"6px",background:"linear-gradient(to bottom, rgba(0 0 0 0.7), transparent)"}}>
-        <Row>
+        <Row className="d-flex flex-wrap">
           {allVideo?.length > 0 ? (
             allVideo.map((video)=>(
               <Col className="me-3 mt-3 mb-5" sm={12} md={6} lg={4} xl={3}>

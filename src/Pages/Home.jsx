@@ -14,16 +14,16 @@ function Home() {
         <div className="add-videos">
           <Add setUploadVideoStatus={setUploadVideoStatus} />
         </div>
-        <Link to={'/watchhistory'} style={{textDecoration:'none', color:'white', fontSize:'30px'}}>Watch History</Link>
+        <Link to={'/watchhistory'} style={{textDecoration:'none', color:'white',}} className='fs-md-4'>Watch History</Link>
       </div>
 
-      <div className="container-fluid w-100 mt-5 mb-5 d-flex justify-content-between">
-          <div className="all-videos col-lg-9">
+      <div className="container-fluid w-100 mt-5 mb-5 d-flex flex-md-row flex-column justify-content-between">
+          <div className="all-videos col-lg-9 col-12">
             <h4 className='mb-5'>All Videos</h4>
             <View uploadVideoStatus={uploadVideoStatus} />
           </div>
 
-          <div className="category col-lg-3">
+          <div className="category mt-5 col-lg-3 col-12">
             <Category />
           </div>
       </div>

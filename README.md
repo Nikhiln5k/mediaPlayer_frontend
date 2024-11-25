@@ -29,7 +29,7 @@ Watch History: Manage your watch history.
 ##### JSON Server: A lightweight REST API to simulate the backend and store data in a JSON file.
 
 
-===============================================================================================================================================
+------------------------------------------------------------------------------------------------------------
 
 
 # Getting Started with Create React App

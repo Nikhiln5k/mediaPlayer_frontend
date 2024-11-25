@@ -15,11 +15,13 @@ Watch History: Manage your watch history.
 ### Frontend:
 
 React.js: A JavaScript library for building responsive and interactive user interfaces.
+
 Bootstrap: A CSS framework for styling the website with a clean and modern look.
 
 ### Backend:
 
 Node.js: A runtime environment for executing server-side JavaScript.
+
 Express.js: A minimal and flexible Node.js framework for building APIs.
 
 ### Database:

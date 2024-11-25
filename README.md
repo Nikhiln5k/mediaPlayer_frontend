@@ -1,3 +1,35 @@
+Media Player Website 🎵🎬
+
+This is a full-stack web application designed to provide users with an interactive media player experience. The platform allows users to upload, categorize, and manage their media while enjoying features like watch history, playlists, and user profiles.
+
+Features 🚀
+
+Media Uploads: Upload your favorite songs or videos directly to the platform.
+Watch History: Automatically track your previously played media.
+Playlists: Create and manage custom playlists for a personalized experience.
+Categories: Browse media by categories for better discovery.
+Watch History: Manage your watch history.
+
+Tech Stack 🛠️
+
+Frontend:
+
+React.js: A JavaScript library for building responsive and interactive user interfaces.
+Bootstrap: A CSS framework for styling the website with a clean and modern look.
+
+Backend:
+
+Node.js: A runtime environment for executing server-side JavaScript.
+Express.js: A minimal and flexible Node.js framework for building APIs.
+
+Database:
+
+JSON Server: A lightweight REST API to simulate the backend and store data in a JSON file.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
